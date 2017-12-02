@@ -19,7 +19,8 @@ defmodule DayOne.ProblemOne do
     sum_sequential_digits(circular_digits, 0)
   end
 
-  defp string_to_integer_list(string) do
+  @spec string_to_integer_list(String) :: [integer]
+  def string_to_integer_list(string) do
     string |> String.split("") |> Enum.filter(fn(x) -> x != "" end) |> Enum.map(fn(x) -> String.to_integer(x) end)
   end
 
