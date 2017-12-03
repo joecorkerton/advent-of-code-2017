@@ -10,10 +10,18 @@ defmodule DayTwo.ProblemOne do
   @spec checksum(String) :: integer
   def checksum(input) do
     array = parse_input(input)
-    array |> Enum.map(fn row -> Enum.max(row) - Enum.min(row) end) |> Enum.sum()
+    array
+    |> Enum.map(fn row -> Enum.max(row) - Enum.min(row) end)
+    |> Enum.sum()
   end
 
   def parse_input(input) do
-    input |> String.split("\n") |> Enum.map(fn row -> Enum.map(String.split(row), fn i -> String.to_integer(i) end) end)
+    input
+    |> String.split("\n")
+    |> Enum.map(fn row ->
+        Enum.map(String.split(row), fn i ->
+          String.to_integer(i)
+        end)
+      end)
   end
 end
