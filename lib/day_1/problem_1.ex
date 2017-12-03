@@ -1,4 +1,4 @@
-defmodule DayOne.ProblemOne do
+defmodule Day1.Problem1 do
   @doc """
   Solve a captcha to prove you are not human.
 
@@ -8,7 +8,7 @@ defmodule DayOne.ProblemOne do
 
   ## Examples
 
-      iex> DayOne.ProblemOne.solve_captcha("01123445")
+      iex> Day1.Problem1.solve_captcha("01123445")
       5
 
   """

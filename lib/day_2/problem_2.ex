@@ -1,4 +1,4 @@
-defmodule DayTwo.ProblemTwo do
+defmodule Day2.Problem2 do
   @doc """
   Calculate the evenly divisible sum of a 'spreadsheet'
 
@@ -10,7 +10,7 @@ defmodule DayTwo.ProblemTwo do
   """
   @spec evenly_divisible_sum(String) :: integer
   def evenly_divisible_sum(input) do
-    array = DayTwo.ProblemOne.parse_input(input)
+    array = Day2.Problem1.parse_input(input)
     array
     |> Enum.map(fn row ->
         Enum.reduce_while(row, 0, fn x, _ ->

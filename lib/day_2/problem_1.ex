@@ -1,4 +1,4 @@
-defmodule DayTwo.ProblemOne do
+defmodule Day2.Problem1 do
   @doc """
   Calculate the checksum of a 'spreadsheet'
 

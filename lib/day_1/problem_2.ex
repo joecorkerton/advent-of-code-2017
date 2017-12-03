@@ -1,6 +1,6 @@
-import DayOne.ProblemOne, only: [string_to_integer_list: 1]
+import Day1.Problem1, only: [string_to_integer_list: 1]
 
-defmodule DayOne.ProblemTwo do
+defmodule Day1.Problem2 do
   @doc """
   Solve a captcha to prove you are not human.
 
@@ -12,7 +12,7 @@ defmodule DayOne.ProblemTwo do
 
   ## Examples
 
-      iex> DayOne.ProblemTwo.solve_captcha("1212")
+      iex> Day1.Problem2.solve_captcha("1212")
       6
 
   """
